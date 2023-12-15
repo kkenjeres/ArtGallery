@@ -1,9 +1,14 @@
 import React from "react";
 import ArtPiecePreview from "./ArtPiecePreview";
+
 const ArtPieces = ({ data }) => {
   return (
     <>
-      <ArtPiecePreview data={data} />
+      {data.map((item) => (
+        <li key={item}>
+          <ArtPiecePreview data={item} />
+        </li>
+      ))}
     </>
   );
 };

@@ -55,11 +55,12 @@ Download the [Favorite Icon](./assets/heart.svg) and save it in a folder named "
 
 #### Tasks
 
-- [ ] Fetch all art pieces with `SWR` in `pages/index.js`
-- [ ] Create the component `ArtPieces` to render a list
-- [ ] `ArtPieces` props: `pieces`
-- [ ] Create the component `ArtPiecePreview`
-- [ ] `ArtPiecePreview` props: `image`, `title`, `artist`
+<!-- - [ ] Fetch all art pieces with `SWR` in `pages/index.js` -->
+<!-- - [ ] Create the component `ArtPieces` to render a list  -->
+<!-- - [ ] `ArtPieces` props: `pieces` -->
+<!-- - [ ] Create the component `ArtPiecePreview` -->
+<!-- - [ ] `ArtPiecePreview` props: `image`, `title`, `artist` -->
+
 
 ---
 

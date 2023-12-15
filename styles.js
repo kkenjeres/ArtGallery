@@ -12,3 +12,4 @@ export default createGlobalStyle`
     font-family: system-ui;
   }
 `;
+

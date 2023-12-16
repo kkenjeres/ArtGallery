@@ -1,5 +1,4 @@
 import ArtPieces from "@/components/ArtPieces";
-import React from "react";
 import useSWR from "swr";
 
 export default function ArtPiecesPage() {
@@ -9,5 +8,9 @@ export default function ArtPiecesPage() {
   if (error) return <div>failed to load</div>;
   if (isLoading) return <div>loading...</div>;
 
-  return <ArtPieces data={data} />;
+  return (
+    <>
+      <ArtPieces data={data} />
+    </>
+  );
 }

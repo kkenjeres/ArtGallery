@@ -5,7 +5,7 @@ const ArtPieces = ({ data }) => {
   return (
     <>
       {data.map((item) => (
-        <li key={item}>
+        <li key={item.slug}>
           <ArtPiecePreview data={item} />
         </li>
       ))}

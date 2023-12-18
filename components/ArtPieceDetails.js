@@ -1,11 +1,11 @@
 import Image from "next/image";
-import Link from "next/link";
 import styled from "styled-components";
+import BackButton from "./BackButton";
 
 export default function ArtPieceDetails({ image, title, artist, year, genre }) {
   return (
     <>
-      <Link href="/art-pieces">Back to Art Pieces</Link>
+      <BackButton />
       <PieceDetailsWrapper>
         <Image src={image} alt={title} width={150} height={150} />
         <p>{title}</p>
@@ -20,3 +20,5 @@ export default function ArtPieceDetails({ image, title, artist, year, genre }) {
 const PieceDetailsWrapper = styled.section`
   border: 1px solid black;
 `;
+
+

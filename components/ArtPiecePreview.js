@@ -4,8 +4,8 @@ import Link from "next/link";
 import styled from "styled-components";
 import FavoriteButton from "./FavoriteButton";
 
-const ArtPiecePreview = ({ data, artPiecesInfo, onToggleFavorite }) => {
-  const isFavorite = artPiecesInfo.some((piece) => piece.slug === data.slug);
+const ArtPiecePreview = ({ data, checkIsFavorite, onToggleFavorite }) => {
+  const isFavorite = checkIsFavorite(data.slug);
 
   return (
     <ArtPieceWrapper key={data.slug}>

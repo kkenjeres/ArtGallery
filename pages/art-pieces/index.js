@@ -2,14 +2,14 @@ import ArtPieces from "@/components/ArtPieces";
 
 export default function ArtPiecesPage({
   data,
-  artPiecesInfo,
+  checkIsFavorite,
   onToggleFavorite,
 }) {
   return (
     <>
       <ArtPieces
         data={data}
-        artPiecesInfo={artPiecesInfo}
+        checkIsFavorite={checkIsFavorite}
         onToggleFavorite={onToggleFavorite}
       />
     </>

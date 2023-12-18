@@ -3,7 +3,7 @@ import { useMemo } from "react";
 
 export default function SpotlightPage({
   data,
-  artPiecesInfo,
+  checkIsFavorite,
   onToggleFavorite,
 }) {
   const spotlightPiece = useMemo(() => {
@@ -16,7 +16,7 @@ export default function SpotlightPage({
     <Spotlight
       spotlightPiece={spotlightPiece}
       onToggleFavorite={onToggleFavorite}
-      artPiecesInfo={artPiecesInfo}
+      checkIsFavorite={checkIsFavorite}
     />
   );
 }

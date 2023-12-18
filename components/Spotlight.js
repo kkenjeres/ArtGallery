@@ -1,10 +1,10 @@
 import ArtPiecePreview from "./ArtPiecePreview";
 
-const Spotlight = ({ onToggleFavorite, artPiecesInfo, spotlightPiece }) => {
+const Spotlight = ({ onToggleFavorite, checkIsFavorite, spotlightPiece }) => {
   return (
     <ArtPiecePreview
       data={spotlightPiece}
-      artPiecesInfo={artPiecesInfo}
+      checkIsFavorite={checkIsFavorite}
       onToggleFavorite={onToggleFavorite}
     />
   );

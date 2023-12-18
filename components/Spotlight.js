@@ -1,10 +1,13 @@
-import React from "react";
 import ArtPiecePreview from "./ArtPiecePreview";
 
-const Spotlight = ({ data }) => {
-  const getRandomArt = Math.floor(Math.random() * data.length);
-  const getSpotlight = data[getRandomArt];
-  return <ArtPiecePreview data={getSpotlight} />;
+const Spotlight = ({ onToggleFavorite, artPiecesInfo, spotlightPiece }) => {
+  return (
+    <ArtPiecePreview
+      data={spotlightPiece}
+      artPiecesInfo={artPiecesInfo}
+      onToggleFavorite={onToggleFavorite}
+    />
+  );
 };
 
 export default Spotlight;

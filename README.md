@@ -61,7 +61,6 @@ Download the [Favorite Icon](./assets/heart.svg) and save it in a folder named "
 <!-- - [ ] Create the component `ArtPiecePreview` -->
 <!-- - [ ] `ArtPiecePreview` props: `image`, `title`, `artist` -->
 
-
 ---
 
 ### User Story 2: Spotlight Piece
@@ -76,9 +75,9 @@ Download the [Favorite Icon](./assets/heart.svg) and save it in a folder named "
 
 #### Acceptance Criteria
 
-- [ ] One art piece is picked at random to show as a spotlight piece
+<!-- - [ ] One art piece is picked at random to show as a spotlight piece
 - [ ] The art piece image is displayed
-- [ ] The art piece artist is displayed
+- [ ] The art piece artist is displayed -->
 
 #### Tasks
 
@@ -107,13 +106,13 @@ Download the [Favorite Icon](./assets/heart.svg) and save it in a folder named "
 
 #### Tasks
 
-- [ ] Move the data fetching logic to `pages/_app`
+<!-- - [ ] Move the data fetching logic to `pages/_app`
 - [ ] Find a solution for global state handling to have the art pieces available on all pages
 - [ ] Adapt the page `pages/index`: rename the function to `SpotlightPage` and have it render only the `Spotlight` component
 - [ ] Create the page `pages/art-pieces/index` that renders the `ArtPieces` component
 - [ ] Create the component `Navigation` that renders all navigation links
 - [ ] Create the component `Layout` that renders the `Navigation` component
-- [ ] Apply the `Layout` component in `pages/_app`
+- [ ] Apply the `Layout` component in `pages/_app` -->
 
 ---
 

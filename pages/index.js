@@ -1,17 +1,22 @@
-import ArtPieces from "@/components/ArtPieces";
-import useSWR from "swr";
 import Spotlight from "@/components/Spotlight";
+import { useMemo } from "react";
 
-export default function SpotlightPage() {
-  const url = "https://example-apis.vercel.app/api/art";
-  const { data, error, isLoading } = useSWR(url);
+export default function SpotlightPage({
+  data,
+  artPiecesInfo,
+  onToggleFavorite,
+}) {
+  const spotlightPiece = useMemo(() => {
+    if (!data) return;
 
-  if (error) return <div>failed to load</div>;
-  if (isLoading) return <div>loading...</div>;
+    return data[Math.floor(Math.random() * data.length)];
+  }, [data]);
 
   return (
-    <>
-      <Spotlight data={data} />
-    </>
+    <Spotlight
+      spotlightPiece={spotlightPiece}
+      onToggleFavorite={onToggleFavorite}
+      artPiecesInfo={artPiecesInfo}
+    />
   );
 }

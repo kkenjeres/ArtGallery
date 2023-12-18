@@ -1,5 +1,22 @@
 import Spotlight from "@/components/Spotlight";
+import { useMemo } from "react";
 
-export default function SpotlightPage() {
-  return <Spotlight />;
+export default function SpotlightPage({
+  data,
+  artPiecesInfo,
+  onToggleFavorite,
+}) {
+  const spotlightPiece = useMemo(() => {
+    if (!data) return;
+
+    return data[Math.floor(Math.random() * data.length)];
+  }, [data]);
+
+  return (
+    <Spotlight
+      spotlightPiece={spotlightPiece}
+      onToggleFavorite={onToggleFavorite}
+      artPiecesInfo={artPiecesInfo}
+    />
+  );
 }

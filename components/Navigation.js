@@ -11,6 +11,9 @@ const Navigation = () => {
         <li>
           <Link href="/">Spotlight</Link>
         </li>
+        <li>
+          <Link href="/favorites">Favorites</Link>
+        </li>
       </ul>
     </nav>
   );
